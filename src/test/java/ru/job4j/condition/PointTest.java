@@ -17,7 +17,7 @@ public class PointTest {
     }
 
     @Test
-    public void when1010to1010then2828() {
+    public void when1010toMinus10Minus10then28Dot28() {
         int x1 = 10;
         int y1 = 10;
         int x2 = -10;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void when040to200then4472() {
+    public void when040toMinus200then44Dot72() {
         int x1 = 0;
         int y1 = 40;
         int x2 = -20;
