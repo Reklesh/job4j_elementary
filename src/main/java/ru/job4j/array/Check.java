@@ -8,11 +8,11 @@ public class Check {
                 result = false;
                 break;
             }
-            }
+        }
         return result;
     }
 
     public static void main(String[] args) {
-            System.out.println(mono(new boolean[] {false, true, true}));
-        }
+        System.out.println(mono(new boolean[]{false, true, true}));
+    }
 }
