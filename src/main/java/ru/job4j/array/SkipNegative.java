@@ -8,9 +8,7 @@ public class SkipNegative {
                 if (array[row][cell] < 0) {
                     array[row][cell] = 0;
                 }
-
             }
-
         }
         return array;
     }
