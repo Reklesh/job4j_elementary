@@ -42,27 +42,4 @@ public class MatrixCheck {
         }
         return result;
     }
-
-    public static void main(String[] args) {
-        System.out.println(monoHorizontal(new char[][]{
-                {'X', 'X', 'X'},
-                {' ', 'X', ' '},
-                {' ', 'X', ' '}
-        }, 0));
-        System.out.println(monoVertical(new char[][]{
-                {'X', 'X', 'X'},
-                {' ', 'X', ' '},
-                {' ', 'X', ' '}
-        }, 1));
-        System.out.println(extractDiagonal(new char[][]{
-                {'0', ' ', ' '},
-                {' ', '0', ' '},
-                {' ', ' ', '0'}
-        }));
-        System.out.println(isWin(new char[][]{
-                {'X', ' ', 'X'},
-                {' ', 'X', 'X'},
-                {'X', ' ', ' '}
-        }));
-    }
 }
