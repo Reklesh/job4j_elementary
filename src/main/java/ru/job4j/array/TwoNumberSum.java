@@ -19,11 +19,4 @@ public class TwoNumberSum {
         }
         return rst;
     }
-
-    public static void main(String[] args) {
-        int[] array = getIndexes(new int[] {3, 4, 6, 8, 10}, 10);
-        for (int index = 0; index < array.length; index++) {
-            System.out.println(array[index]);
-        }
-    }
 }
