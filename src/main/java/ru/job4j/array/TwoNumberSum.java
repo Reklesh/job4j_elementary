@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
 public class TwoNumberSum {
 
     public static int[] getIndexes(int[] array, int target) {
@@ -19,9 +17,5 @@ public class TwoNumberSum {
             }
         }
         return rst;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(getIndexes(new int[]{3, 4, 6, 8, 10}, 7)));
     }
 }
