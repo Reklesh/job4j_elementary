@@ -1,22 +1,27 @@
 package ru.job4j.array;
 
+import java.util.Arrays;
+
 public class TwoNumberSum {
 
     public static int[] getIndexes(int[] array, int target) {
-        int[] rst = new int[0];
+        int[] rst = new int[]{};
         int i = 0;
-        int j = 1;
-        while (j < array.length) {
+        int j = array.length - 1;
+        while (i < j) {
             if (array[i] + array[j] == target) {
                 rst = new int[]{i, j};
                 break;
-            }
-            if (array[j] == array[array.length - 1]) {
+            } else if (array[i] + array[j] < target) {
                 i++;
-                j = i;
+            } else {
+                j--;
             }
-            j++;
         }
         return rst;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(getIndexes(new int[]{3, 4, 6, 8, 10}, 7)));
     }
 }
